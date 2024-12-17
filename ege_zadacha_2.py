@@ -15,11 +15,11 @@
 # |  1  |  0  |  1  |     |  0  |
 # -------------------------------
 
+from itertools import *
+
 # определим функцию для вычисления значения функции
 def f(x, y, z, w):
     return (x and not y) or (y == z) or not w
-
-from itertools import *
 
 # перебор всех пробелов
 for a1, a2, a3, a4 in product([0, 1], repeat=4):
